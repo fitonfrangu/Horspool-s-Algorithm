@@ -15,11 +15,11 @@ namespace Horspool_s_Algorithm
 
             var table = new long[256];
 
-            for (int i = 0; i < 255; i++)
+            for (int i = 0; i < 256; i++)
             {
                 table[i] = patternLength;
 
-                for (int j = 0; j < patternLength - 2; j++)
+                for (int j = 0; j < patternLength - 1; j++)
                 {
                     table[patternASCII[j]] = patternLength - 1 - j;
                 }
